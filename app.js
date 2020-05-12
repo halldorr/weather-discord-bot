@@ -1,15 +1,14 @@
 // Require discord.js package
 const Discord = require('discord.js');
 const axios = require('axios');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const token = process.env.DISCORD_TOKEN;
+const api = process.env.OPENWEATHERMAP_API;
 
 // Create a new client using the new keyword
 const client = new Discord.Client();
-const api = '<openweathermap_api_key>';
-
-//secure token
-const {
-    token
-} = require("./token.json");
 
 // Display a message once the bot has started
 client.on("ready", () => {
