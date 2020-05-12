@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Jeff",
+    "Lewis",
+    "Woobr"
+  ],
+  "author": "Jeff Lewis, Woobr",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "discord.js": "^12.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
