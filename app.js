@@ -31,12 +31,14 @@ client.on("message", async msg => {
         var dest = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&q=' + location + '&appid=' + api;
         axios.get(dest)
             .then(response => {
-                console.log(response.data.weather[0].description);
                 msg.reply(`It is currently ${response.data.main.temp} in ${location} with ${response.data.weather[0].description}`);
             })
             .catch(error => {
-                console.log(error);
+                msg.reply(`${error.response.data.message}`);
             });
+    }
+    else if (command === "!weatherhelp") {
+        msg.reply('Format your weather request by typing: !weather <city name>');
     }
 });
 
