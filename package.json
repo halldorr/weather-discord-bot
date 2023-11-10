@@ -14,7 +14,7 @@
   "author": "Jeff Lewis, Woobr",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "node-fetch": "^3.2.10"
